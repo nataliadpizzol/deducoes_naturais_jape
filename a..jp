@@ -1,0 +1,12 @@
+﻿CONJECTUREPANEL Conjectures
+CURRENTPROOF "P, P→Q ⊢ Q"
+INFER P,
+     P→Q 
+     ⊢ Q 
+FORMULAE
+0 Q,
+1 P,
+2 P→Q 
+IS
+SEQ (cut[B,C\0,0]) ("→ elim"[A,B\1,0]) (hyp[A\2]) (hyp[A\1]) (hyp[A\0])
+END

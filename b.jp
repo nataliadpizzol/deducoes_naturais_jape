@@ -1,0 +1,14 @@
+﻿CONJECTUREPANEL Conjectures
+CURRENTPROOF "P→Q, Q→R ⊢ P→R"
+INFER P→Q,
+     Q→R 
+     ⊢ P→R 
+FORMULAE
+0 R,
+1 Q,
+2 Q→R,
+3 P,
+4 P→Q 
+IS
+SEQ ("→ intro"[A,B\3,0]) (cut[B,C\1,0]) ("→ elim"[A,B\3,1]) (hyp[A\4]) (hyp[A\3]) (cut[B,C\0,0]) ("→ elim"[A,B\1,0]) (hyp[A\2]) (hyp[A\1]) (hyp[A\0])
+END
