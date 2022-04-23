@@ -1,0 +1,12 @@
+﻿CONJECTUREPANEL Conjectures
+CURRENTPROOF "P∨¬P"
+INFER P∨¬P 
+FORMULAE
+0 ⊥,
+1 ¬(P∨¬P),
+2 P∨¬P,
+3 P,
+4 ¬P 
+IS
+SEQ ("contra (classical)"[A\2]) (cut[B,C\3,0]) ("contra (classical)"[A\3]) (cut[B,C\2,0]) (LAYOUT "∨ intro" (0) ("∨ intro(R)"[B,A\3,4]) (hyp[A\4])) (cut[B,C\0,0]) ("¬ elim"[B\2]) (hyp[A\2]) (hyp[A\1]) (hyp[A\0]) (cut[B,C\2,0]) (LAYOUT "∨ intro" (0) ("∨ intro(L)"[B,A\4,3]) (hyp[A\3])) (cut[B,C\0,0]) ("¬ elim"[B\2]) (hyp[A\2]) (hyp[A\1]) (hyp[A\0])
+END
